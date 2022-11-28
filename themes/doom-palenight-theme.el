@@ -32,8 +32,8 @@ Can be an integer to determine the exact padding."
   "A dark theme inspired by Material-Palenight"
 
   ;; name        default   256       16
-  ((bg         '("#292D3E" nil       nil))
-   (bg-alt     '("#242837" nil       nil))
+  ((bg         '("#000000" nil       nil))
+   (bg-alt     '("#0a0a0a" nil       nil))
    (base0      '("#1c1f2b" "black"   "black"))
    (base1      '("#1e212e" "#262626" "brightblack"))
    (base2      '("#232635" "#303030" "brightblack"))
