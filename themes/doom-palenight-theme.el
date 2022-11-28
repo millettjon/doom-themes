@@ -32,8 +32,8 @@ Can be an integer to determine the exact padding."
   "A dark theme inspired by Material-Palenight"
 
   ;; name        default   256       16
-  ((bg         '("#000000" nil       nil))
-   (bg-alt     '("#0a0a0a" nil       nil))
+  ((bg         '("#000000" nil       nil)) ; JAM
+   (bg-alt     '("#0a0a0a" nil       nil)) ; JAM
    (base0      '("#1c1f2b" "black"   "black"))
    (base1      '("#1e212e" "#262626" "brightblack"))
    (base2      '("#232635" "#303030" "brightblack"))
@@ -51,6 +51,7 @@ Can be an integer to determine the exact padding."
    (red         '("#ff5370" "#ff0000" "red"))
    (orange      '("#f78c6c" "#ff5f00" "brightred"))
    (green       '("#c3e88d" "#afff00" "green"))
+   (light-green '("light green" nil nil)) ; JAM
    (teal        '("#44b9b1" "#00d7af" "brightgreen"))
    (yellow      '("#ffcb6b" "#ffd700" "brightyellow"))
    (blue        '("#82aaff" "#5fafff" "brightblue"))
@@ -65,15 +66,15 @@ Can be an integer to determine the exact padding."
    (vertical-bar   base2)
    (selection      base4)
    (builtin        blue)
-   (comments       base5)
-   (doc-comments   (doom-lighten base5 0.25))
+   (comments       light-green) 	; JAM
+   (doc-comments   (doom-lighten light-green 0.25)) ; JAM
    (constants      orange)
    (functions      blue)
    (keywords       cyan)
    (methods        blue)
    (operators      cyan)
    (type           magenta)
-   (strings        green)
+   (strings        '("yellow3" nil nil)) ; JAM
    (variables      yellow)
    (numbers        orange)
    (region         base3)
